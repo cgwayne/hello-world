@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for HTML5 for Windows version 5.1.25" />
+<title>Java Management Extensions</title>
+</head>
+<body>
+<h1>Java Management Extensions (JMX) Tracing</h1>
+<!-- Center cell: Title -->
+<p>Traces in the JMX implementation are based on the Java SE
+logging capability (provided by classes in the
+<tt>java.util.logging</tt> package). The JMX implementation uses a
+set of Loggers for sending traces. All Loggers are contained in the
+javax.management namespace, which corresponds to the name of the
+root package hosting all public JMX interfaces.</p>
+<p>The list below shows the Logger objects used in this
+implementation and their corresponding category of activity.</p>
+<table width="100%" border="1" summary=
+"Logger objects used in the JMX implementation and their corresponding category of activity">
+<thead>
+<tr>
+<th>Logger Name:</th>
+<th>Information logged</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><tt>javax.management.mbeanserver</tt></td>
+<td>Information about the MBean Server</td>
+</tr>
+<tr>
+<td><tt>javax.management.mlet</tt></td>
+<td>Information from an MLet service</td>
+</tr>
+<tr>
+<td><tt>javax.management.monitor</tt></td>
+<td>Information from a monitor</td>
+</tr>
+<tr>
+<td><tt>javax.management.timer</tt></td>
+<td>Information from a timer</td>
+</tr>
+<tr>
+<td><tt>javax.management.notification</tt></td>
+<td>Information from the notification mechanism</td>
+</tr>
+<tr>
+<td><tt>javax.management.relation</tt></td>
+<td>Information from the Relation Service</td>
+</tr>
+<tr>
+<td><tt>javax.management.modelmbean</tt></td>
+<td>Information from the Model MBean components</td>
+</tr>
+<tr>
+<td><tt>javax.management.misc</tt></td>
+<td>Information sent from any other class.</td>
+</tr>
+<tr>
+<td><tt>javax.management.remote.rmi</tt></td>
+<td>Information from the RMI connector.</td>
+</tr>
+<tr>
+<td><tt>javax.management.remote.misc</tt></td>
+<td>Information sent from any other JMX Remote API class.</td>
+</tr>
+</tbody>
+</table>
+<p>The following log levels are used in JMX:</p>
+<table width="100%" border="1" summary="Log levels used in JMX">
+<tbody>
+<tr>
+<th>JMX log level:</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><tt>Level.FINEST</tt></td>
+<td>Used to print debugging traces (useful for diagnosing the JMX
+implementation)</td>
+</tr>
+<tr>
+<td><tt>Level.FINER</tt></td>
+<td>Used to print information traces</td>
+</tr>
+<tr>
+<td><tt>Level.SEVERE</tt></td>
+<td>Used to notify of error conditions</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
